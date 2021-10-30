@@ -38,10 +38,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Daftar Buku</a>
+              <a class="nav-link" href="index.php">Daftar Buku</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="tambah.html">Tambah Buku</a>
+              <a class="nav-link active" href="tambah.php">Tambah Buku</a>
             </li>
           </ul>
         </div>
@@ -56,7 +56,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
       <div class="row">
         <div class="col-md-6">
-          <form action="" method="post">
+          <form action="" method="post" enctype="multipart/form-data">
             <div class="mb-3">
               <label for="judul" class="form-label">Judul</label>
               <input type="text" class="form-control" id="judul" name="judul" required/>
@@ -79,7 +79,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
             <div class="mb-3">
               <label for="cover" class="form-label">Cover</label>
-              <input type="text" class="form-control" id="cover" name="cover" />
+              <input type="file" class="form-control" id="cover" name="cover" />
             </div>
             <button type="submit" class="btn btn-primary">Tambah Data</button>
           </form>
